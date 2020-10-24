@@ -29,8 +29,7 @@ There are 2 types of threads in an application, user thread and daemon thread.</
   By implementing Runnable interface
   By extending Thread class:
 ThreadTest.java:
-Output:
-Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution. start() method internally calls run() method.</description>
+class Task extends Thread { @Override public void run() { System.out.println(Thread.currentThread().getName() + &amp;#34; is running&amp;#34;); } } public class ThreadTest { public static void main(String[] args) { for(int i=1; i&amp;lt;=5; i++) { Task task = new Task(); task.setName(&amp;#34;Thread &amp;#34; + i); task.start(); } } } Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution.</description>
     </item>
     
     <item>

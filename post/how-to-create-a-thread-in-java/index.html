@@ -11,8 +11,7 @@
   By implementing Runnable interface
   By extending Thread class:
 ThreadTest.java:
-Output:
-Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution. start() method internally calls run() method.">
+class Task extends Thread { @Override public void run() { System.out.println(Thread.currentThread().getName() &#43; &#34; is running&#34;); } } public class ThreadTest { public static void main(String[] args) { for(int i=1; i&lt;=5; i&#43;&#43;) { Task task = new Task(); task.setName(&#34;Thread &#34; &#43; i); task.start(); } } } Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution.">
     <meta name="generator" content="Hugo 0.75.1" />
     
     
@@ -39,8 +38,7 @@ Here a Task class extends Thread class and overrides the run() method which cont
   By implementing Runnable interface
   By extending Thread class:
 ThreadTest.java:
-Output:
-Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution. start() method internally calls run() method." />
+class Task extends Thread { @Override public void run() { System.out.println(Thread.currentThread().getName() &#43; &#34; is running&#34;); } } public class ThreadTest { public static void main(String[] args) { for(int i=1; i&lt;=5; i&#43;&#43;) { Task task = new Task(); task.setName(&#34;Thread &#34; &#43; i); task.start(); } } } Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://reachjatin.github.io/post/how-to-create-a-thread-in-java/" />
 <meta property="article:published_time" content="2020-10-24T00:00:00+00:00" />
@@ -51,11 +49,10 @@ Here a Task class extends Thread class and overrides the run() method which cont
   By implementing Runnable interface
   By extending Thread class:
 ThreadTest.java:
-Output:
-Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution. start() method internally calls run() method.">
+class Task extends Thread { @Override public void run() { System.out.println(Thread.currentThread().getName() &#43; &#34; is running&#34;); } } public class ThreadTest { public static void main(String[] args) { for(int i=1; i&lt;=5; i&#43;&#43;) { Task task = new Task(); task.setName(&#34;Thread &#34; &#43; i); task.start(); } } } Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution.">
 <meta itemprop="datePublished" content="2020-10-24T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-24T00:00:00+00:00" />
-<meta itemprop="wordCount" content="105">
+<meta itemprop="wordCount" content="149">
 
 
 
@@ -67,8 +64,7 @@ Here a Task class extends Thread class and overrides the run() method which cont
   By implementing Runnable interface
   By extending Thread class:
 ThreadTest.java:
-Output:
-Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution. start() method internally calls run() method."/>
+class Task extends Thread { @Override public void run() { System.out.println(Thread.currentThread().getName() &#43; &#34; is running&#34;); } } public class ThreadTest { public static void main(String[] args) { for(int i=1; i&lt;=5; i&#43;&#43;) { Task task = new Task(); task.setName(&#34;Thread &#34; &#43; i); task.start(); } } } Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution."/>
 
 	
   </head>
@@ -197,11 +193,26 @@ Here a Task class extends Thread class and overrides the run() method which cont
 </ul>
 <p><strong>By extending Thread class:</strong></p>
 <p><em>ThreadTest.java:</em></p>
-<p><img src="/images/Multi-threading/Question72/color1.png" alt=""></p>
-<p><img src="/images/Multi-threading/Question72/color2.png" alt=""></p>
-<p>Output:</p>
-<p><img src="/images/Multi-threading/Question72/output.png" alt=""></p>
-<p>Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution. <em>start() method internally calls run() method</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Task</span> <span style="color:#66d9ef">extends</span> Thread <span style="color:#f92672">{</span>
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>Thread<span style="color:#f92672">.</span><span style="color:#a6e22e">currentThread</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> 
+				<span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; is running&#34;</span><span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ThreadTest</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+		<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>1<span style="color:#f92672">;</span> i<span style="color:#f92672">&lt;=</span>5<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+			Task task <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Task<span style="color:#f92672">();</span>
+			task<span style="color:#f92672">.</span><span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Thread &#34;</span> <span style="color:#f92672">+</span> i<span style="color:#f92672">);</span>
+			task<span style="color:#f92672">.</span><span style="color:#a6e22e">start</span><span style="color:#f92672">();</span>
+		<span style="color:#f92672">}</span>
+		
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Here a <code>Task</code> class extends <code>Thread</code> class and overrides the <code>run()</code> method which contains the business logic, then we make an object of this Task and call the <code>start()</code> method, which starts the thread execution. <em>start() method internally calls run() method</em>.</p>
 <p><strong>By implementing Runnable interface:</strong></p>
 <p><em>ThreadTest.java:</em></p>
 <p><img src="/images/Multi-threading/Question72/runnable/color1.png" alt=""></p>
