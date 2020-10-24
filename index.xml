@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jatin&#39;s Blog</title>
+    <link>https://reachjatin.github.io/</link>
+    <description>Recent content on Jatin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://reachjatin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Question 71: What is Multi-threading?</title>
+      <link>https://reachjatin.github.io/post/what-is-multi-threading/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://reachjatin.github.io/post/what-is-multi-threading/</guid>
+      <description>Answer: Multi-threading is a process of executing two or more threads concurrently, utilizing available CPU resources. A single thread is a lightweight sub-process and the smallest unit of processing. Threads are independent, if any exception occurs in one thread, it does not affect other threads.
+When we execute a Java program without making any separate thread, then also our program runs on a thread called ‘main thread’.
+There are 2 types of threads in an application, user thread and daemon thread.</description>
+    </item>
+    
+    <item>
+      <title>Question 72: How to create a thread in Java?</title>
+      <link>https://reachjatin.github.io/post/how-to-create-a-thread-in-java/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://reachjatin.github.io/post/how-to-create-a-thread-in-java/</guid>
+      <description>Answer: There are 2 ways to create a thread:
+  By extending Thread class
+  By implementing Runnable interface
+  By extending Thread class:
+ThreadTest.java:
+Output:
+Here a Task class extends Thread class and overrides the run() method which contains the business logic, then we make an object of this Task and call the start() method, which starts the thread execution. start() method internally calls run() method.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://reachjatin.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reachjatin.github.io/contact/</guid>
+      <description>This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out Formspree for a simple, free form service.
+Your NameEmail AddressAn email address is required.Message</description>
+    </item>
+    
+  </channel>
+</rss>
