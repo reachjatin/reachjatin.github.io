@@ -34,6 +34,15 @@ Here a Task class extends Thread class and overrides the run() method which cont
     </item>
     
     <item>
+      <title>About</title>
+      <link>https://reachjatin.github.io/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reachjatin.github.io/about/about/</guid>
+      <description>Jatin Arora is a Computer Science graduate. He holds an expertise in Java &amp;amp; SpringBoot. He has worked on a variety of interesting projects across different domains like Inventory management, DevOps, cloud &amp;amp; financial domain.</description>
+    </item>
+    
+    <item>
       <title>Contact</title>
       <link>https://reachjatin.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
